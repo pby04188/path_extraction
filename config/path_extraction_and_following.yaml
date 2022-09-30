@@ -1,0 +1,15 @@
+# path extraction 관련 파라미터
+path_directory_name: path           
+path_file_name: FMTC_test_100.txt
+
+
+# move base follower 관련 파라미터
+
+path_file_name: FMTC_test_100.txt
+path_frame: /map                      # 
+frequency: 10                         # max 20 Hz
+look_ahead_index: 300
+look_ahead_distance: 10
+
+# 공통
+min_sample_distance: 0.5            # minimum path distance between subsequent path points (m)

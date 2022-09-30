@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="path_extraction" type="path_extraction.py" name="path_extraction" output="screen">
+		<rosparam file="$(find path_extraction)/config/path_extraction_and_following.yaml" command="load" />
+	</node>
+
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find path_extraction)/rviz/pathextraction_map.rviz"/>
+</launch>
